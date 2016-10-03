@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <base href="/">
+    <title>Agents</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="app/css/app.css">
+    <link rel="stylesheet" href="assets/stylesheets/font-awesome.css">
+
+    <!-- 1. Load libraries -->
+    <!-- IE required polyfills, in this exact order -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+    <!-- Librerias externas-->
+    <script src="node_modules/underscore/underscore.js"></script>
+    <script src="node_modules/chart.js/dist/Chart.bundle.min.js"></script>
+    <script src="assets/js/jquery-1.10.2.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- 2. Configure SystemJS -->
+    <script src="systemjs.config.js"></script>
+    <script>
+        System.import('app').catch(function(err) {
+            console.error(err);
+        });
+    </script>
+
+
+</head>
+
+<!-- 3. Display the application -->
+
+<body>
+    <my-app>
+
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="centering text-center text-primary" 
+                        style="  min-height: 100%; 
+                                 min-height: 100vh; 
+                                 display: flex;
+                                 align-items: center; ">
+
+                        <div class="sk-folding-cube">
+                        <div class="sk-cube1 sk-cube"></div>
+                        <div class="sk-cube2 sk-cube"></div>
+                        <div class="sk-cube4 sk-cube"></div>
+                        <div class="sk-cube3 sk-cube"></div>
+                        <h1  style="text-shadow: 2px 2px #dddddd; color:#34495e;">Agents</h1>
+                        </div>
+                  
+                    
+                </div>
+            </div>
+        </div>
+
+    </my-app>
+</body>
+
+</html>
